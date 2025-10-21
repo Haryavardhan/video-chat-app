@@ -2,8 +2,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import { io } from "socket.io-client";
 
-const SERVER = "https://videochat-server.onrender.com"; // <- REPLACE if your server IP is different
+const SERVER = "https://video-chat-app-jrt9.onrender.com"; // your actual Render backend URL
 const socket = io(SERVER, { transports: ["websocket", "polling"] });
+
 
 export default function App() {
   const [roomId, setRoomId] = useState("");
